@@ -1,5 +1,4 @@
-Repos : git@github.com:charlyromytanga/Site-autooccas.git
-Public Key Projet dev web : 
+Repos : git@github.com:charlyromytanga/Site-autooccas.git 
 
 
 Administrateur 1 : zouaouinai@cy-tech.fr
