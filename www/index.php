@@ -1,3 +1,9 @@
+<h2>PHP</h2>
+
+<?php
+    phpinfo();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
