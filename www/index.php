@@ -6,48 +6,55 @@
     <title>Autooccas.fr</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../scr/css/bootstrap.min.css">
-    <script defer src="../scr/javascript/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-        <div class="container-fluid">
-            <div class="navbar">
-                <ul class="navbar-nav bd-navbar-nav flex-row">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Acceuil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./acheter.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Acheter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./estimerunevoiture.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Estimer une voiture </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./vendre.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Vendre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./moncompte.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');">Mon comptre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./FAQ.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">GitHub</a>
-                </li>
-                <li>
-                    <a href="./test.php">test</a>
-                </li>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-pills" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php">
+                    <img src="..\scr\images\logo.png" alt="logo" style="height: 30px;">
+                </a>
+            </div>
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav" style="display: flex; justify-content: space-between; column-gap: 60px;">
+                    <li class="nav-item col-5 col-lg-auto">
+                        <a class="nav-link active" href="index.php">Acceuil</a>
+                    </li>
+                    <li class="nav-item col-5 col-lg-auto">
+                        <a class="nav-link" href="./acheter.php">Acheter</a>
+                    </li>
+                    <li class="nav-item col-5 col-lg-auto">
+                        <a class="nav-link" href="./estimerunevoiture.php">Estimer une voiture</a>
+                    </li>
+                    <li class="nav-item col-5 col-lg-auto">
+                        <a class="nav-link" href="./vendre.php">Vendre</a>
+                    </li>
+
                 </ul>
             </div>
-        </div>
-
+            <div class="container-fluid justify-content-end">
+                <ul class="navbar-nav" style="display: flex; justify-content: space-between; column-gap: 20px;">
+                    <li class="nav-item col-6 col-lg-auto">
+                        <a class="nav-link" href="./moncompte.php">Mon compte</a>
+                    </li>
+                    <li class="nav-item col-6 col-lg-auto">
+                        <a class="nav-link" href="./FAQ.php">FAQ</a>
+                    </li>
+                    <li class="nav-item col-6 col-lg-auto">
+                        <a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" target="_blank" rel="noopener">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
     </header>
 
     <section>
         <div>
-
+            <p>Bonjour</p>
         </div>
     </section>
     

@@ -15,7 +15,7 @@
         <div class="navbar-nav-scroll">
             <ul class="navbar-nav bd-navbar-nav flex-row">
             <li class="nav-item">
-                <a class="nav-link" href="index.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Acceuil</a>
+                <a class="nav-link" href="./index.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Acceuil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="./acheter.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Acheter</a>
