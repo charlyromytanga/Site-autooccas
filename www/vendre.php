@@ -24,7 +24,7 @@
                 <a class="nav-link" href="./estimerunevoiture.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Estimer une voiture </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Vendre</a>
+                <a class="nav-link" href="./vendre.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Vendre</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./moncompte.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');">Mon comptre</a>

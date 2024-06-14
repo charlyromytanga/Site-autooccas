@@ -6,37 +6,43 @@
     <title>Autooccas.fr</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../www/scr/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../www/scr/javascript/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../scr/css/bootstrap.min.css">
+    <script defer src="../scr/javascript/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
-        <div class="navbar-nav-scroll">
-            <ul class="navbar-nav bd-navbar-nav flex-row">
-            <li class="nav-item">
-                <a class="nav-link" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Acceuil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./acheter.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Acheter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./estimerunevoiture.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Estimer une voiture </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./vendre.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Vendre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./moncompte.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');">Mon comptre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./FAQ.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">GitHub</a>
-            </li>
-            </ul>
+        <div class="container-fluid">
+            <div class="navbar">
+                <ul class="navbar-nav bd-navbar-nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./acheter.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Acheter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./estimerunevoiture.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Estimer une voiture </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./vendre.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Vendre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./moncompte.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');">Mon comptre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./FAQ.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">GitHub</a>
+                </li>
+                <li>
+                    <a href="./test.php">test</a>
+                </li>
+                </ul>
+            </div>
         </div>
+
     </header>
 
     <section>
