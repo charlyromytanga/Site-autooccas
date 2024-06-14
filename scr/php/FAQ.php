@@ -3,145 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <style>
-        .faq-container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 10px;
-        }
-        .faq-question {
-            background-color: white;
-            color: #000080;
-            padding: 10px;
-            cursor: pointer;
-            border: 1px solid #ddd;
-            margin-top: 5px;
-        }
-        .faq-answer {
-            display: none;
-            background-color: white;
-            color: black;
-            font-weight: bold;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-top: none;
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var questions = document.querySelectorAll('.faq-question');
-            questions.forEach(function(question) {
-                question.addEventListener('click', function() {
-                    var answer = this.nextElementSibling;
-                    if (answer.style.display === "block") {
-                        answer.style.display = "none";
-                    } else {
-                        answer.style.display = "block";
-                    }
-                });
-            });
-        });
-    </script>
+    <title>Acheter</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../javascript/bootstrap.bundle.min.js">
 </head>
 <body>
-    <div class="faq-container">
-        <?php
-            $questions = [
-                "Comment est calculé le prix d'estimation de ma voiture ?" => <<<EOT
-Le prix de vente de votre véhicule est calculé à partir des informations que vous déclarez dans notre demande d'estimation qui déterminent l’équipement et l’état d’usure de votre véhicule.
 
-Nous analysons ensuite les ventes des véhicules similaires auprès des professionnels et des sites d’annonces de véhicules d’occasion dans votre région.
-EOT,
-                "Puis-je annuler mon rendez-vous de mise en vente ?" => <<<EOT
-Vous avez programmé un RDV de mise en vente mais vous avez un empêchement …
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="d-block" viewBox="0 0 612 612" role="img" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg>
+        </a>
 
-Vous pouvez annuler votre rendez-vous depuis votre espace client jusqu’à 24h avant celui-ci.
+        <div class="navbar-nav-scroll">
+            <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Acceuil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Acheter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./vendre.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Vendre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./moncompte.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Mon comptre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./FAQ.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">FAQ</a>
+            </li>
+            </ul>
+        </div>
 
-Passé ce délai, merci de contacter un conseiller au 01 76 42 01 20.
-EOT,
-                "Suis-je obligé d'accepter une offre ?" => <<<EOT
-Une offre est une opportunité de vente immédiate.
+        <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+            <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="https://github.com/charlyromytanga/Site-autooccas.git" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img" focusable="false"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+            </a>
+            </li>
+        </ul>
+    </header>
 
-Vous avez la possibilité d'accepter ou de refuser librement les offres à partir de votre espace client et sans avoir besoin de contacter l'acheteur ! Vous gardez la main sur le prix de vente de votre véhicule : vous pouvez aussi formuler une contre-offre à l'acheteur, qui sera lui aussi libre de l'accepter ou de vous proposer une nouvelle offre.
-EOT,
-                "Est-ce que je reçois toutes les offres ?" => <<<EOT
-Le vendeur ne reçoit que les offres les plus intéressantes.
+    <section>
+        <div>
 
-Votre conseiller CapCar s’assure du sérieux de l’offre reçue avant de vous la soumettre.
-
-En effet, nous faisons le filtre pour ne vous notifier que lorsqu'une offre pertinente vous est soumise par un client acheteur !
-EOT,
-                "Comment prendre un rendez-vous de mise en vente ?" => <<<EOT
-Vous pouvez prendre votre rendez-vous depuis votre espace client. À partir de la section « Projet de vente », vous retrouverez votre véhicule avec la mention « À inspecter ».
-
-Lorsque vous cliquez sur celui-ci, vous aurez la possibilité de saisir vos créneaux de disponibilités !
-
-Si vous n’avez pas encore fait votre demande d’estimation cliquez ici ! Vous pourrez ensuite prendre rendez-vous depuis votre espace client.
-
-Notre équipe de conseillers reste disponible pour répondre à vos questions au 01 76 42 01 20.
-EOT,
-                "J'ai réservé un véhicule mais j'ai changé d'avis." => <<<EOT
-Vous pouvez annuler votre réservation en prenant contact avec l’un de nos conseillers. En cas d’annulation, vous serez remboursé de l’intégralité des frais versés à la réservation.
-
-Attention : en annulant votre réservation, la voiture sera remise en vente sur notre site et un autre acheteur pourra la réserver.
-
-Si vous souhaitez annuler votre réservation, contactez votre Agent, il vous accompagnera dans votre démarche.
-EOT,
-                "Pourquoi mon offre a expiré ?" => <<<EOT
-Sans réponse de la part du vendeur, votre offre expire 48 heures après avoir été proposée.
-
-Si elle est refusée, c'est peut-être parce que le vendeur l’estime sans doute trop basse.
-
-Si le véhicule est réservé par un autre acheteur pendant que vous avez proposé une offre, toutes les offres en cours sont suspendues.
-
-En revanche, elles peuvent reprendre si la réservation n'est pas concluante et que la voiture est remise en ligne !
-EOT,
-                "Combien de temps est valable mon offre ?" => <<<EOT
-Une fois que vous avez formulé votre offre : le vendeur dispose d'un délai de 48 heures pour valider toute offre qu'il reçoit.
-
-Si le vendeur accepte votre offre, bonne nouvelle : vous pouvez réserver la voiture et acheter votre nouveau bolide !
-
-Si le vendeur n'a pas accepté votre offre, celle-ci n'est plus valable.
-EOT,
-                "Comment se déroule une transaction ?" => <<<EOT
-1: Vérification de l’état du véhicule par l’inspecteur
-
-Suite au rendez-vous convenu avec le vendeur et l’inspecteur. Ce dernier s’assurera de la conformité de tous les documents et de l'état du véhicule (contrôle technique, travaux effectués...).
-
-2 : Test du véhicule
-
-Vous réaliserez un essai routier du véhicule .
-
-3 : Signature de la vente et paiement du véhicule
-
-Vous souhaitez conclure la vente !
-
-Si vous avez choisi le paiement par portefeuille en ligne, aucune action n’est nécessaire de votre part. L’inspecteur se charge de réaliser le virement sur le compte du vendeur.
-
-Si vous avez choisi le paiement par chèque de banque, venez muni de celui-ci, il sera donné au vendeur à ce moment.
-
-Si l’acheteur ne souhaite finalement pas acquérir le véhicule, il lui sera restitué l’intégralité des fonds versés sur son compte.
-EOT,
-                "Comment se passe la reprise de votre véhicule ?" => <<<EOT
-CapCar propose la reprise simple de votre véhicule, sur le lieu de votre choix, en 24h et au meilleur prix !
-
-La reprise CapCar en 3 étapes :
-
-1 - Nous déterminons par téléphone le prix de reprise de votre véhicule et un RDV sur le lieu de votre choix.
-
-2 - Un représentant CapCar se rend au rendez vous pour confirmer le prix et formaliser la cession.
-
-3 - Notre représentant repart avec votre véhicule et nous réalisons votre règlement par virement dans les 24 heures.
-EOT
-            ];
-
-            foreach ($questions as $question => $answer) {
-                echo "<div class='faq-question'>$question</div>";
-                echo "<div class='faq-answer'>$answer</div>";
-            }
-        ?>
-    </div>
+        </div>
+    </section>
+    
 </body>
 </html>
-
