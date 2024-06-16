@@ -65,7 +65,7 @@
         </nav>
     </header>
 
-    <section id="bloc-droit-compte">
+    <section id="bloc-droit-moncompte">
         <div class="container-fluid text-center">
 
                 <div class="col-md-auto">
@@ -74,7 +74,7 @@
         </div>
     </section>
     <br>
-    <section id="bloc-gauche-compte">
+    <section id="bloc-gauche-moncompte">
         <div class="container-fluid">
             <div class="col-md-auto">
             <h3><span>Le contenu du côté gauche</span></h3>
