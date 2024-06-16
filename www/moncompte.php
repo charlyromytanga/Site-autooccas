@@ -65,17 +65,20 @@
         </nav>
     </header>
 
-    <section>
+    <section id="bloc-droit-compte">
         <div class="container-fluid text-center">
-            <div class="row">
+
                 <div class="col-md-auto">
                     <h3><span>Le contenu du coté droit</span></h3>
                 </div>
-                <div class="col-md-auto">
-                    <h3><span>Le contenu du coôté gauche</span></h3>
-                </div>
+        </div>
+    </section>
+    <br>
+    <section id="bloc-gauche-compte">
+        <div class="container-fluid">
+            <div class="col-md-auto">
+            <h3><span>Le contenu du côté gauche</span></h3>
             </div>
-            
         </div>
     </section>
 
