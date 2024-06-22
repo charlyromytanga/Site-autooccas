@@ -66,7 +66,7 @@
     </header>
 
     <section id="contenu-principal">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-8 card text-center">
                 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
