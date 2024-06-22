@@ -7,7 +7,7 @@
 
     <!-- Bootstrap  CSS online -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--Bootstrap js online -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -65,22 +65,36 @@
         </nav>
     </header>
 
-    <section id="bloc-droit-moncompte">
-        <div class="container-fluid text-center">
-
-                <div class="col-md-auto">
-                    <h3><span>Le contenu du coté droit</span></h3>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Section d'illustration -->
+            <div class="col-md-auto p-5"><img src="./connexion.png" alt="connexion" class="img-fluid"></div>
+            <!-- Section de connexion -->
+            <div class="col-md-6  text-black custom-bg">
+                <div class="card text-center">
+                    <div class="card-header"><h2><span>Se connecter</span></h2></div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="forme-control" id="email"
+                                placeholder="exemple@domaine.fr">                    
+                            </div>
+                        </form>
+                        <div class="from-group">
+                            <label for="motdepasse">Mot de passe</label>
+                            <input type="motdepasse" class="form-control" id="motdepasse">
+                            <button type="submit" class="btn btn-primary">connexion</button>
+                            <p class="mt-3"><a href="#" class="text-white">Mot de passe oublié?</a></p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        Bienvenue
+                    </div>
                 </div>
-        </div>
-    </section>
-    <br>
-    <section id="bloc-gauche-moncompte">
-        <div class="container-fluid">
-            <div class="col-md-auto">
-            <h3><span>Le contenu du côté gauche</span></h3>
             </div>
         </div>
-    </section>
+    </div>
 
 
     <footer>
