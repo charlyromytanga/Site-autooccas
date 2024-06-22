@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg nav-pills" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <div class="container-fluid">
-                    <a class="navbar-brand mr-0 mr-md-2" href="/">
+                    <a class="navbar-brand mr-0 mr-md-2" href="./index.php">
                         <img src="./logo.png" class="img-fluid" alt="logo" width="163" height="33">
                     </a>
                 </div>
@@ -65,12 +65,97 @@
         </nav>
     </header>
 
-    <section>
-        <div>
-            <h3><span>LE CONTENU DE LA PAGE : body </span></h3>
+    <section id="contenu-principal">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-8 card text-center">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <picture class="">
+                                <img src="./famille.png" class="im-fluid" alt="voiture1">
+                            </picture>
+                            <div class="card-footer text-body-secondary">
+                                    "La voiture qui grandit avec vous.”
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+              
+                                <picture class="">
+                                    <img src="./etudiant.png" class="im-fluid" alt="voiture1">
+                                </picture>
+
+                            <div class="card-footer text-body-secondary">
+                                “Votre partenaire pour les aventures estudiantines.”
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+            
+                                <picture class="">
+                                    <img src="./cadre.png" class="im-fluid" alt="voiture1">
+                                </picture>
+
+                            <div class="card-footer text-body-secondary">
+                                “Conduisez avec style et confiance.”
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+          
+                                <picture class="">
+                                    <img src="./retraite.png" class="im-fluid" alt="voiture1">
+                                </picture>
+
+                            <div class="card-footer text-body-secondary">
+                                “Profitez de la route en toute sérénité.”
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+         
+                                <picture class="">
+                                    <img src="./utilitaire.png" class="im-fluid" alt="voiture1">
+                                </picture>
+
+                            <div class="card-footer text-body-secondary">
+                                “Robuste et fiable, comme votre travail.”
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+                <div class="col-sm-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+            </div>
         </div>
     </section>
-
 
     <footer>
         <nav  class="navbar navbar-expand-lg nav-pills" style="background-color: rgb(10, 30, 69)">

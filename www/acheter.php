@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg nav-pills" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <div class="container-fluid">
-                    <a class="navbar-brand mr-0 mr-md-2" href="/">
+                    <a class="navbar-brand mr-0 mr-md-2" href="./index.php">
                         <img src="./logo.png" class="img-fluid" alt="logo" width="163" height="33">
                     </a>
                 </div>

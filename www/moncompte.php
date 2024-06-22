@@ -19,16 +19,16 @@
         <nav class="navbar navbar-expand-lg nav-pills" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <div class="container-fluid">
-                    <a class="navbar-brand mr-0 mr-md-2" href="/">
+                    <a class="navbar-brand mr-0 mr-md-2" href="index.php">
                         <img src="./logo.png" class="img-fluid" alt="logo" width="163" height="33">
                     </a>
                 </div>
             </div>
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav" style="display: flex; justify-content: space-between; column-gap: 40px;">
+                    <ul class="navbar-nav" style="display: flex; justify-content: space-between; column-gap: 20px;">
                         <li class="nav-item col-8 col-lg-auto">
-                            <a class="nav-link" href="index.php">Acceuil</a>
+                            <a class="nav-link" href="./index.php">Acceuil</a>
                         </li>
                         <li class="nav-item col-8 col-lg-auto">
                             <a class="nav-link" href="./acheter.php">Acheter</a>
@@ -49,10 +49,16 @@
                             <a class="nav-link active" href="./moncompte.php">Mon compte</a>
                         </li>
                         <li class="nav-item col-8 col-lg-auto">
-                            <a class="nav-link" href="./FAQ.php">FAQ</a>
-                        </li>
-                        <li class="nav-item col-8 col-lg-auto">
-                            <a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" target="_blank" rel="noopener">GitHub</a>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn-group dropdown-toggle" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                 FAQ et Git
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="./FAQ.php">FAQ</a></li>
+                                    <li><a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" target="_blank" rel="noopener">GitHub</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -83,13 +89,13 @@
                         </form>
                         <div class="from-group">
                             <label for="motdepasse">Mot de passe</label>
-                            <input type="motdepasse" class="form-control" id="motdepasse">
-                            <button type="submit" class="btn btn-primary">connexion</button>
-                            <p class="mt-3"><a href="#" class="text-white">Mot de passe oublié?</a></p>
-                        </div>
+                            <input type="password" class="form-control" id="password"
+                            placeholder="saisir">
+                            <button type="submit" class="btn btn-primary">connexion</button>  
+                        </div> 
                     </div>
                     <div class="card-footer text-body-secondary">
-                        Bienvenue
+                        <a href="#" class="text-link">Mot de passe oublié?</a>
                     </div>
                 </div>
             </div>
