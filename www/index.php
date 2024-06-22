@@ -263,7 +263,7 @@
                             <label for="priceRange" class="form-label">Prix :</label>
                             <input type="range" class="form-range" id="priceRange" min="0" max="100000" step="10" oninput="updatePriceValue()">
                             <p id="priceValue">0 €</p>
-                            <a href="#" class="btn btn-primary">Lancer la recherche</a>
+                            <a href="#" class="btn btn-primary" type="submit">Lancer la recherche</a>
 
                         </div>
                         </div>
