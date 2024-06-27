@@ -88,15 +88,14 @@ require("connexion.php");
                             <div class="form-group">
                                 <label for="email">E-mail</label>
                                 <input type="email" class="forme-control" id="email"
-                                placeholder="exemple@domaine.fr">                    
+                                placeholder="exemple@domaine.fr">  
+                                <label for="motdepasse">Mot de passe</label>
+                                <input type="password" class="form-control" id="password"
+                                placeholder="saisir">
+                                <button type="submit" class="btn btn-primary">connexion</button>                    
                             </div>
+                            
                         </form>
-                        <div class="from-group">
-                            <label for="motdepasse">Mot de passe</label>
-                            <input type="password" class="form-control" id="password"
-                            placeholder="saisir">
-                            <button type="submit" class="btn btn-primary">connexion</button>  
-                        </div> 
                     </div>
                     <div class="card-footer text-body-secondary">
                         <a href="#" class="text-link">Mot de passe oublié?</a>

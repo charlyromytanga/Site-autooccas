@@ -2,6 +2,7 @@
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
+    
     $password = $_POST['password'];
  
     $csvUrl = 'https://drive.google.com/file/d/1XlR7F-yoUlgNcJi__7TDsjFZSN2d92qt/view?usp=sharing';
