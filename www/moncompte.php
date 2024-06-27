@@ -1,3 +1,7 @@
+<?php
+require("connexion.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -80,7 +84,7 @@
                 <div class="card text-center">
                     <div class="card-header"><h2><span>Se connecter</span></h2></div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="connexion.php" method="post">
                             <div class="form-group">
                                 <label for="email">E-mail</label>
                                 <input type="email" class="forme-control" id="email"
