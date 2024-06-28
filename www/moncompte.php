@@ -1,3 +1,7 @@
+<?php
+require("connexion.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +11,7 @@
 
     <!-- Bootstrap  CSS online -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--Bootstrap js online -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -19,16 +23,16 @@
         <nav class="navbar navbar-expand-lg nav-pills" style="background-color: #e3f2fd;">
             <div class="container-fluid">
                 <div class="container-fluid">
-                    <a class="navbar-brand mr-0 mr-md-2" href="/">
+                    <a class="navbar-brand mr-0 mr-md-2" href="index.php">
                         <img src="./logo.png" class="img-fluid" alt="logo" width="163" height="33">
                     </a>
                 </div>
             </div>
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav" style="display: flex; justify-content: space-between; column-gap: 40px;">
+                    <ul class="navbar-nav" style="display: flex; justify-content: space-between; column-gap: 20px;">
                         <li class="nav-item col-8 col-lg-auto">
-                            <a class="nav-link" href="index.php">Acceuil</a>
+                            <a class="nav-link" href="./index.php">Acceuil</a>
                         </li>
                         <li class="nav-item col-8 col-lg-auto">
                             <a class="nav-link" href="./acheter.php">Acheter</a>
@@ -49,10 +53,16 @@
                             <a class="nav-link active" href="./moncompte.php">Mon compte</a>
                         </li>
                         <li class="nav-item col-8 col-lg-auto">
-                            <a class="nav-link" href="./FAQ.php">FAQ</a>
-                        </li>
-                        <li class="nav-item col-8 col-lg-auto">
-                            <a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" target="_blank" rel="noopener">GitHub</a>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn-group dropdown-toggle" 
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                 FAQ et Git
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="./FAQ.php">FAQ</a></li>
+                                    <li><a class="nav-link" href="https://github.com/charlyromytanga/Site-autooccas.git" target="_blank" rel="noopener">GitHub</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -65,19 +75,35 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-md-auto">
-                    <h3><span>Le contenu du coté droit</span></h3>
-                </div>
-                <div class="col-md-auto">
-                    <h3><span>Le contenu du coôté gauche</span></h3>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Section d'illustration -->
+            <div class="col-md-auto p-5"><img src="./connexion.png" alt="connexion" class="img-fluid"></div>
+            <!-- Section de connexion -->
+            <div class="col-md-6  text-black custom-bg">
+                <div class="card text-center">
+                    <div class="card-header"><h2><span>Se connecter</span></h2></div>
+                    <div class="card-body">
+                        <form action="connexion.php" method="post">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="forme-control" id="email"
+                                placeholder="exemple@domaine.fr">  
+                                <label for="motdepasse">Mot de passe</label>
+                                <input type="password" class="form-control" id="password"
+                                placeholder="saisir">
+                                <button type="submit" class="btn btn-primary">connexion</button>                    
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        <a href="#" class="text-link">Mot de passe oublié?</a>
+                    </div>
                 </div>
             </div>
-            
         </div>
-    </section>
+    </div>
 
 
     <footer>
